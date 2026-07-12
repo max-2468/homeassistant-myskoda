@@ -11,7 +11,6 @@ set_charging_profile_time:
       selector:
         number:
           min: 1
-          max: 4
           mode: box
     enabled:
       required: true
