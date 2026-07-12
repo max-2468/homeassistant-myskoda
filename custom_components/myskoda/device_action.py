@@ -19,7 +19,7 @@ _LOGGER = logging.getLogger(__name__)
 SERVICE_SET_CHARGING_PROFILE_TIME_SCHEMA = vol.Schema(
     {
         vol.Required("device_id"): cv.string,
-        vol.Required("id"): vol.All(vol.Coerce(int), vol.Range(min=1, max=4)),
+        vol.Required("id"): vol.All(vol.Coerce(int), vol.Range(min=1)),
         vol.Required("enabled"): cv.boolean,
         vol.Required("start_time"): cv.time,
         vol.Required("end_time"): cv.time,
